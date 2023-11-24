@@ -66,6 +66,41 @@ flask run --debug
 
 After all of that, you can check or testing the APIs endpoints in postman app. Please visit API Documentation at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci to get clearer examples for body request in APIs enpoint which is used in this app.
 
+In advance assignment there is a need to do unit testing using **pytest**. Hence, here is steps by steps on how to do it.
+
+#### Install Pytest Packages
+First, activate virtual environment
+``` 
+pipenv shell
+```
+Then, install pytest package
+``` 
+pipenv install pytest pytest-flask --dev
+```
+
+#### Run Pytest
+``` 
+pytest
+```
+Runs the tests in a verbose mode, showing more details about the test execution.
+``` 
+pytest -v
+```
+Displays local variables in tracebacks when an error occurs during testing.
+``` 
+pytest --showlocals
+```
+forces pytest to display long tracebacks on failures.
+``` 
+pytest --tb=long  # Shows the long traceback
+```
+allows printing output to the console (useful for debugging).
+``` 
+pytest -s
+```
+
+If, pytest packages is not recognized by Visual Studio Code. Please try to delete pipfile.lock in locals and the try to re install packages by using **pipenv install**. If it does not work, the try to select correct **python interpreter** (**ctrl+shift+P**). It could be to virtuan environment in python interpreter is incorrect because of invalid folder location.
+
 To access intermediate assignment code files in this repository, please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-inter-task and please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-adv-task for advance assignment code files. Thanks
 
 for further question please contact author at andalanaldi@gmail.com
