@@ -34,13 +34,16 @@ def post_tweet():
     if not user:
         return {"error": "User not found!"}, 404
 
+    # Generate the published_at timestamp
+    published_at = datetime.utcnow()
+
     # Create a new tweet
-    new_tweet = Tweet(user_id=user_id, published_at=datetime.utcnow(), tweet=tweet_content)
+    new_tweet = Tweet(user_id=user_id, published_at=published_at, tweet=tweet_content)
     db.session.add(new_tweet)
     db.session.commit()
    
     return {
         'id': new_tweet.id,
-        'publish_at': new_tweet.publish_at,
+        'published_at': new_tweet.published_at,
         'tweet': new_tweet.tweet
     }
