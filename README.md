@@ -66,4 +66,6 @@ flask run --debug
 
 After all of that, you can check or testing the APIs endpoints in postman app. Please visit API Documentation at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci to get clearer examples for body request in APIs enpoint which is used in this app.
 
+To access intermediate assignment code files in this repository, please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-inter-task and please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-adv-task for advance assignment code files. Thanks
+
 for further question please contact author at andalanaldi@gmail.com
