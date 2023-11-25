@@ -1,6 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ecFNqaXc)
 
-# Week 21 Assignment - Twitter Clone Backend App using Flask (Visit API Documentation at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci )
+# Week 21 Assignment - Twitter Clone Backend App using Flask 
+
+## Please Visit API Documentation for Intermediate and Advance Assigment at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci and https://documenter.getpostman.com/view/29042682/2s9YeD8YYU
 
 Build a simplified Twitter like version using flask. This project includes implementation of registration and login functionality, posting tweets, following or unfollowing users and obtaining user profiles. Flask is utilized for routing, apis, blueprints, HTTP methods. Integrate Postgresql in Supabase using SQLAlchemy. Token based authentication is implemented too.
 
@@ -64,7 +66,7 @@ or
 flask run --debug
 ```
 
-After all of that, you can check or testing the APIs endpoints in postman app. Please visit API Documentation at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci to get clearer examples for body request in APIs enpoint which is used in this app.
+After all of that, you can check or testing the APIs endpoints in postman app. Please visit API Documentation for intermediate and advance assignment at https://documenter.getpostman.com/view/29042682/2s9YeD7Cci and https://documenter.getpostman.com/view/29042682/2s9YeD8YYU to get clearer examples for body request in APIs enpoint which is used in this app.
 
 In advance assignment there is a need to do unit testing using **pytest**. Hence, here is steps by steps on how to do it.
 
