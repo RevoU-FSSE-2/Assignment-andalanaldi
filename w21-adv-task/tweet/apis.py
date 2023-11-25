@@ -64,13 +64,13 @@ def flag_tweet():
     if not is_moderator(user_id):
         return {"error": "User cannot perform this action"}, 403
 
-    tweet_id = data.get("tweet_id")
+    id = data.get("id")
     is_spam = data.get("is_spam")
 
-    if tweet_id is None or is_spam is None:
+    if id is None or is_spam is None:
         return {"error": "Invalid request, tweet_id or is_spam is missing"}, 400
 
-    tweet = Tweet.query.get(tweet_id)
+    tweet = Tweet.query.get(id)
     if not tweet:
         return {"error": "Tweet not found"}, 404
 
@@ -79,7 +79,7 @@ def flag_tweet():
     db.session.commit()
 
     return {
-        "tweet_id": tweet_id,
+        "id": id,
         "is_spam": is_spam
     }
 

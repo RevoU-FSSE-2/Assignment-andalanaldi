@@ -21,8 +21,8 @@ app.register_blueprint(tweet_blueprint, url_prefix="/tweet")
 app.register_blueprint(following_blueprint, url_prefix="/following")
 app.register_blueprint(moderation_blueprint, url_prefix="/moderation")
 
-with app.app_context():
-    db_init()
+# with app.app_context():
+#     db_init()
 
 # print & breakpoint in py similar to console.log() in js
 

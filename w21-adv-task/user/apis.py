@@ -4,6 +4,7 @@ from tweet.models import Tweet
 from following.models import Following
 from auth.utils import decode_jwt
 from db import db
+import jwt, os
 
 user_blueprint = Blueprint('user', __name__)
 
@@ -95,6 +96,27 @@ def get_followed_users_tweets(user_id):
 
     return tweets_data
 
+# Include the token generation function for a moderator
+def get_user_role(user_id):
+    # Logic to retrieve the user's role from the database based on user_id
+    # Modify this function to fetch the user's role from the User table
+    user = User.query.filter_by(user_id=user_id).first()
+    if user:
+        return user.role
+    return None  # Return None if user not found or role not defined
+
+def generate_jwt_token(user_id):
+    user_role = get_user_role(user_id)
+    payload = {
+        'user_id': user_id,
+        'role': user_role,  # Include the user's role in the payload
+        # Other payload data...
+    }
+    # Generate JWT token with the payload using the SECRET_KEY from .env
+    secret_key = os.getenv("SECRET_KEY")
+    token = jwt.encode(payload, secret_key, algorithm='HS256')
+    return token
+
 moderation_blueprint = Blueprint('moderation', __name__)
 
 @moderation_blueprint.route("/user", methods=["POST"])
@@ -104,12 +126,14 @@ def suspend_user():
         return {"error": "Token is missing"}, 401
 
     payload = decode_jwt(token)
+    # print(payload)  # Check the payload received
     if not payload:
         return {"error": "Token is not valid!"}, 401
 
-    if payload.get('role') != 'MODERATOR':
+    user_role = get_user_role(payload.get('user_id'))
+    if user_role != 'MODERATOR':
         return {"error": "User cannot do this action"}, 403
-
+    
     data = request.get_json()
     user_id = data.get("user_id")
     is_suspended = data.get("is_suspended")
@@ -121,7 +145,11 @@ def suspend_user():
     user.is_suspended = is_suspended
     db.session.commit()
 
+        # Include token generation for response
+    generated_token = generate_jwt_token(payload.get('user_id'))
+
     return {
         "user_id": user_id,
-        "is_suspended": is_suspended
+        "is_suspended": is_suspended,
+        "new_token": generated_token  # Sending a new token as a response
     }
