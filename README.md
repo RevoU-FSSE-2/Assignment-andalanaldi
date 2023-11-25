@@ -106,3 +106,102 @@ If, pytest packages is not recognized by Visual Studio Code. Please try to delet
 To access intermediate assignment code files in this repository, please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-inter-task and please visit https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/tree/main/w21-adv-task for advance assignment code files. Thanks
 
 for further question please contact author at andalanaldi@gmail.com
+
+## Body Response Demonstration in Postman App
+
+#### Registration
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/1a%20Register%20Sucess.PNG/?raw=true)
+
+#### Register with Missing Role
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/1b%20Register%20Missed%20Role.PNG/?raw=true)
+
+#### Register with Exist Account 
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/1c%20Register%20Exist%20Account.PNG/?raw=true)
+
+#### Moderator Registration
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/1d%20Register%20Moderator.PNG/?raw=true)
+
+#### User Database
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/1e%20User%20DB.PNG/?raw=true)
+
+#### Login
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/2a%20Login%20Success.PNG/?raw=true)
+
+#### Tweet Authorization
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/3a%20Tweet%20Success.PNG/?raw=true)
+
+#### Tweet Body Response
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/3b%20Tweet%20Success%202.PNG/?raw=true)
+
+#### Tweet Database
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/3c%20Tweet%20db.PNG/?raw=true)
+
+#### Follow Authorization
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/4a%20following%20status%20follow.PNG/?raw=true)
+
+#### Unfollow
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/4b%20following%20status%20unfollow.PNG/?raw=true)
+
+#### Follow User Not Found
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/4b%20following%20status%20user%20not%20found.PNG/?raw=true)
+
+#### Cannot Follow Themself
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/4b%20following%20status%20cannot%20follow%20unfollow.PNG/?raw=true)
+
+#### User Profile
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/5a%20user%20profile%20sucess.PNG/?raw=true)
+
+#### Feed
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/5a%20feed%20(usernamebug).PNG/?raw=true)
+
+#### Moderator Login
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/7a%20Moderator%20login%20success.PNG/?raw=true)
+
+#### Flag Tweet Authorization
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/7b%20flag%20tweet%20auth.PNG/?raw=true)
+
+#### Flag Tweet with id Attribute
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/7c%20flag%20tweet%20auth%20success.PNG/?raw=true)
+
+#### Flag Tweet with No tweet_id Attribute
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/7c%20flag%20tweet%20auth%20no%20tweet_id.PNG/?raw=true)
+
+#### Suspend User
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/8a%20suspend%20user%20success.PNG/?raw=true)
+
+#### User Login Suspended
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/9a%20success%20suspend%20user.PNG/?raw=true)
+
+#### Fail to Identify MODERATOR
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/8a%20suspend%20user%2C%20fail%20identify%20mdoerator.PNG/?raw=true)
+
+#### Add is_suspended into Database
+
+![](https://github.com/RevoU-FSSE-2/Assignment-andalanaldi/blob/main/w21-adv-task/Postman%20Images/user%20add%20issuspended.PNG/?raw=true)
+
+<!-- #### 
+
+![](/?raw=true) -->
+
